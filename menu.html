@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/scripts/modernizr.js"></script>
+    <script src="/scripts/minified.js"></script>
+    <script src="/scripts/easing.js"></script>
+    <script src="/scripts/css-transform.js"></script>
+    <script src="/scripts/animate-css-rotate-scale.js"></script>
+    <script src="/scripts/transit.js"></script>
+    <script>
+    $(document).ready(function() {
+        "use strict";
+        var open=false;
+        $("ul").css({
+          "height":0,
+          "overflow":"hidden"
+        });
+        $("header").click(function(){
+          if(open) {
+            $("ul").css({
+              "height":"0"
+            },500);
+            $("header").text("☰");
+            $("header").css({
+              "width":"1.5em"
+            });
+            open=false;
+          }
+          else {
+            $("ul").css({
+              "height":"auto"
+            },500);
+            $("header").text("Menu");
+            $("header").css({
+              "width":"240px"
+            });
+            open=true;
+          }
+        });
+      });
+    </script>
+    <style>
+      body {
+        width:250px;
+        position:absolute;
+        top:0;
+        left:0;
+        background:transparent;
+      }
+      header {
+        font-weight:bold;
+        text-align:center;
+        background-color:#C08CFF;
+        border-radius:10px;
+        margin:5px 5px 0 5px;
+        padding:2px;
+        cursor:pointer;
+        height:1.5em;
+        width:1.5em;
+      }
+      ul {
+        list-style-type:none;
+        text-align:center;
+        margin-left:0;
+        margin-right:0;
+        width:100%;
+        border-radius:10px;
+      }
+      li {
+        background-color:#D6B5FF;
+        min-width:1px;
+        width:auto;
+        border-radius:10px;
+        margin: 5px;
+        padding:1px;
+      }
+      #menu {
+        background-color: #EAD9FF;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+    </script>
+  </head>
+  <body>
+    <div id="menu">
+      <header>☰</header>
+      <ul>
+        <li><a href="/index.html">Index</a></li>
+        <li><a href="/art.html" class="broken">Art</a></li>
+        <li><a href="/poetry.html" class="broken">Poetry</a></li>
+        <li><a href="/trisected.html">Trisected</a></li>
+        <li><a href="/rangers.html">Rangers</a></li>
+        <li><a href="/prki.html">Pr'ki</a></li>
+        <li><a href="/zyrisia.html">Kingdoms of Zyrisia</a></li>
+        <li><a href="/kermit.html">Kermit</a></li>
+        <li><a href="/roemo.html">Ro-emo & Juliet</a></li>
+        <li><a href="/convergence.html">Convergence</a></li>
+        <li><a href="/future.html" class="broken">Future's Academy</a></li>
+        <li><a href="/ninjas.html" class="broken">Ninjas</a></li>
+        <li><a href="/flopsters.html" class="broken">Flopsters</a></li>
+        <li><a href="/marked.html">Marked</a></li>
+        <li><a href="/renshaw.html">Renshaw Hotel</a></li>
+        <li><a href="/fan.html" class="broken">Fancharacters</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
