@@ -1,0 +1,138 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {
+  background-color: #EAD9FF;
+  color: black;
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  position: relative;
+}
+
+h2 {
+  background-color: #C08CFF;
+  border-radius: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align:center;
+  width: 100%;
+}
+
+article {
+  max-width:980px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+header {
+  max-width:980px;
+  margin:5vh auto;
+  display:flex;
+  vertical-align: middle;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius:20px;
+  text-align: center;
+  background-color: #D6B5FF;
+  padding: 5px;
+  min-height:25vh;
+  align-content: center;
+}
+
+h1 {
+  width:100%;
+}
+
+header p {
+  text-align:center;
+  margin-top:.5rem;
+  width: 100%;
+}
+
+header ul {
+  font-size:1.125rem;
+  margin-top:.5rem;
+  width:100%;
+}
+
+header li {
+  display: inline;
+}
+
+header li::after {
+  content: " |";
+}
+
+header li:last-child::after {
+  content: "";
+}
+
+article {
+  display: flex;
+	display: -webkit-flex;
+  justify-content: space-around;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+article a {
+  padding-top:.5em;
+  padding-left:5px;
+  padding-right:5px;
+  text-align: center;
+  border-radius: 15px;
+  width: auto;
+  height: 200px;
+  min-width: 100px;
+  max-width: 500px;
+  margin: 5px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #D6B5FF;
+}
+
+article a:hover {
+  text-decoration: inherit;
+  box-shadow: 0 0 0px 250px rgba(255, 255, 255, .33) inset;
+}
+
+a {
+  color:#9640FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.title {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-shadow: -1px -1px .75px black, -1px 1px .75px black, 1px -1px .75px black, 1px 1px .75px black;
+  font-weight: bold;
+  font-size: 1.125em;
+  padding: 5px;
+  text-align: right;
+  bottom: 0;
+  right: .125em;
+}
+
+footer {
+  text-align: center;
+  background-color: #D6B5FF;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+}
