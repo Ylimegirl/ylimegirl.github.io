@@ -1,116 +1,96 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Renshaw Hotel</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" href="/renshaw/headerImage.png" >
-    <style>
-    body {
-      background-color: #FFBFBF;
-    }
-    
-    a {
-      color: #BF3030;
-    }
-    
-    #intro,
-    .flex article,
-    footer {
-      background-color: #FF8080;
-    }
-    
-    h2,
-    .flex ::-webkit-scrollbar-thumb,
-    .flex ::-webkit-scrollbar-thumb:hover {
-      background-color: #FF4040;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="maxHeight">
-      <div class="center" id="intro">
-        <img id="introImage" class="circle" src="/renshaw/headerImage.png" alt="The Renshaw Hotel" title="The Renshaw Hotel" />
-        <h1>Renshaw Hotel</h1>
-        <div class="subtitle" style="font-style: italic;">From that moment you saved me, I became indebted to you<br />So from now on I'll be with you always, always<br />—<a href="http://fav.me/dbeznlm" target="_blank">Fabrications</a></div>
-        <p><em>Renshaw Hotel</em> is a hotel for interdimensional beings to observe Earth and its inhabitants. One day, sixteen year-old Katrina Marron finds herself transported to this hotel, and now spends her time working at the hotel while trying to find a way to return home. This project was co-developed with <a href="https://en.gravatar.com/blakepoison" target="_blank">Blake Poison</a>.</p>
-      </div>
-    </div>
-    <div class="center flex">
-      <article id="Katrina_Marron">
-        <h2>Katrina Marron</h2>
-        <div>
-          <img class="characterImage" src="/renshaw/Katrina.png" alt="Drawn by me" title="Drawn by me" />
-          <div class="infobox">
-            <strong>Species</strong>: Human<br />
-            <strong>Gender</strong>: Female (she/her)<br />
-            <strong>Age</strong>: 16<br />
-          </div>
-          <p>A junior at Ryvens High who moved to the town of Ryvensdale two years ago and had adjusted to life as an extra there. After arriving at the Renshaw Hotel, she realized that she must learn to take the spotlight in order to return to her ordinary life. </p>
-        </div>
-      </article>
-      <article id="John_Renshaw">
-        <h2>John Renshaw</h2>
-        <div>
-          <img class="characterImage" src="/renshaw/John.png" alt="Drawn by me" title="Drawn by me" />
-          <div class="infobox">
-            <strong>Species</strong>: Human<br />
-            <strong>Gender</strong>: Male (he/him)<br />
-            <strong>Age</strong>: 50ish<br />
-          </div>
-          <p>The founder and owner of the Renshaw Hotel. He is able to create pathways between doors but refuses to elaborate how he is able to do so (along with most other details of his past). He often takes in stranded denizens of closed dimensions in order to take care of them until they can return home.</p>
-        </div>
-      </article>
-      <article id="Hexaprosopa">
-        <h2>Hexaprosopa</h2>
-        <div>
-          <img class="characterImage" src="/renshaw/Hexa.png" alt="Drawn by me" title="Drawn by me" />
-          <div class="infobox">
-            <strong>Species</strong>: Robot<br />
-            <strong>Gender</strong>: N/A (xe/xem)<br />
-            <strong>Age</strong>: 5<br />
-          </div>
-          <p>A member of a robotic species who ran away to the Renshaw Hotel and now works as a butler there. Xe quickly took a liking to Katrina (who nicknamed xem "Hexa") and often ends up accompanying her on her misadventures.</p>
-        </div>
-      </article>
-      <article id="Veronica">
-        <h2>Veronica</h2>
-        <div>
-          <img class="characterImage" src="/renshaw/Veronica.png" alt="Drawn by me" title="Drawn by me" />
-          <div class="infobox">
-            <strong>Species</strong>: Human<br />
-            <strong>Gender</strong>: Female (she/her)<br />
-            <strong>Age</strong>: 18<br />
-          </div>
-          <p>The queen bee of Ryvens High who has taken a particular interest in tormenting Katrina the last few years. She keeps her lackeys Kimberly and Katani on a short leash and is always trying to further improve her social standing.</p>
-        </div>
-      </article>
-      <article id="Kimberly">
-        <h2>Kimberly</h2>
-        <div>
-          <img class="characterImage" src="/renshaw/Kimberly.png" alt="Drawn by me" title="Drawn by me" />
-          <div class="infobox">
-            <strong>Species</strong>: Human<br />
-            <strong>Gender</strong>: Female (she/her)<br />
-            <strong>Age</strong>: 17<br />
-          </div>
-          <p>One of Veronica's lackeys, she has been friends with Katani since they were young and is more interested in pleasing Katani than Veronica. As long as Katani follows Veronica she will follow suit.</p>
-        </div>
-      </article>
-      <article id="Katani">
-        <h2>Katani</h2>
-        <div>
-          <img class="characterImage" src="/renshaw/Katani.png" alt="Drawn by me" title="Drawn by me" />
-          <div class="infobox">
-            <strong>Species</strong>: Human<br />
-            <strong>Gender</strong>: Female (she/her)<br />
-            <strong>Age</strong>: 17<br />
-          </div>
-          <p>Her life has always felt hollow and lonely as an only child and often did reckless things in an attempt to fill that emptiness. She has currently chosen to try and obtain her happiness by attaining popularity with Veronica.</p>
-        </div>
-      </article>
-    </div>
-    <footer><a href="/">Index</a> | <a href="https://github.com/Ylimegirl">Profile</a><br />Copyright &copy; Ylimegirl 2020. All rights reserved.</footer>
-  </body>
-</html>
+---
+title: Renshaw Hotel
+image: /assets/images/renshaw/headerImage.png
+foreground: "#FF8080"
+background: "#FFBFBF"
+heading-color: "#FF4040"
+link-color: "#BF3030"
+---
+<div class="maxHeight">
+	<div class="center" id="intro">
+		<img id="introImage" class="circle" src="/assets/images/renshaw/headerImage.png" alt="The Renshaw Hotel" title="The Renshaw Hotel" />
+		<h1>Renshaw Hotel</h1>
+		<div class="subtitle" style="font-style: italic;">From that moment you saved me, I became indebted to you<br />So from now on I'll be with you always, always<br />—<a href="http://fav.me/dbeznlm">Fabrications</a></div>
+		<p><em>Renshaw Hotel</em> is a hotel for interdimensional beings to observe Earth and its inhabitants. One day, sixteen year-old Katrina Marron finds herself transported to this hotel, and now spends her time working at the hotel while trying to find a way to return home. This project was co-developed with <a href="https://en.gravatar.com/blakepoison">Blake Poison</a>.</p>
+	</div>
+</div>
+<div class="center flex">
+	<article id="Katrina_Marron">
+		<h2>Katrina Marron</h2>
+		<div>
+			<img class="characterImage" src="/assets/images/renshaw/Katrina.png" alt="Drawn by me" title="Drawn by me" />
+			<div class="infobox">
+				<strong>Species</strong>: Human<br />
+				<strong>Gender</strong>: Female (she/her)<br />
+				<strong>Age</strong>: 16<br />
+			</div>
+			<p>A junior at Ryvens High who moved to the town of Ryvensdale two years ago and had adjusted to life as an extra there. After arriving at the Renshaw Hotel, she realized that she must learn to take the spotlight in order to return to her ordinary life. </p>
+		</div>
+	</article>
+	
+	<article id="John_Renshaw">
+		<h2>John Renshaw</h2>
+		<div>
+			<img class="characterImage" src="/assets/images/renshaw/John.png" alt="Drawn by me" title="Drawn by me" />
+			<div class="infobox">
+				<strong>Species</strong>: Human<br />
+				<strong>Gender</strong>: Male (he/him)<br />
+				<strong>Age</strong>: 50ish<br />
+			</div>
+			<p>The founder and owner of the Renshaw Hotel. He is able to create pathways between doors but refuses to elaborate how he is able to do so (along with most other details of his past). He often takes in stranded denizens of closed dimensions in order to take care of them until they can return home.</p>
+		</div>
+	</article>
+	
+	<article id="Hexaprosopa">
+		<h2>Hexaprosopa</h2>
+		<div>
+			<img class="characterImage" src="/assets/images/renshaw/Hexa.png" alt="Drawn by me" title="Drawn by me" />
+			<div class="infobox">
+				<strong>Species</strong>: Robot<br />
+				<strong>Gender</strong>: N/A (xe/xem)<br />
+				<strong>Age</strong>: 5<br />
+			</div>
+			<p>A member of a robotic species who ran away to the Renshaw Hotel and now works as a butler there. Xe quickly took a liking to Katrina (who nicknamed xem "Hexa") and often ends up accompanying her on her misadventures.</p>
+		</div>
+	</article>
+	
+	<article id="Veronica">
+		<h2>Veronica</h2>
+		<div>
+			<img class="characterImage" src="/assets/images/renshaw/Veronica.png" alt="Drawn by me" title="Drawn by me" />
+			<div class="infobox">
+				<strong>Species</strong>: Human<br />
+				<strong>Gender</strong>: Female (she/her)<br />
+				<strong>Age</strong>: 18<br />
+			</div>
+			<p>The queen bee of Ryvens High who has taken a particular interest in tormenting Katrina the last few years. She keeps her lackeys Kimberly and Katani on a short leash and is always trying to further improve her social standing.</p>
+		</div>
+	</article>
+	
+	<article id="Kimberly">
+		<h2>Kimberly</h2>
+		<div>
+			<img class="characterImage" src="/assets/images/renshaw/Kimberly.png" alt="Drawn by me" title="Drawn by me" />
+			<div class="infobox">
+				<strong>Species</strong>: Human<br />
+				<strong>Gender</strong>: Female (she/her)<br />
+				<strong>Age</strong>: 17<br />
+			</div>
+			<p>One of Veronica's lackeys, she has been friends with Katani since they were young and is more interested in pleasing Katani than Veronica. As long as Katani follows Veronica she will follow suit.</p>
+		</div>
+	</article>
+	
+	<article id="Katani">
+		<h2>Katani</h2>
+		<div>
+			<img class="characterImage" src="/assets/images/renshaw/Katani.png" alt="Drawn by me" title="Drawn by me" />
+			<div class="infobox">
+				<strong>Species</strong>: Human<br />
+				<strong>Gender</strong>: Female (she/her)<br />
+				<strong>Age</strong>: 17<br />
+			</div>
+			<p>Her life has always felt hollow and lonely as an only child and often did reckless things in an attempt to fill that emptiness. She has currently chosen to try and obtain her happiness by attaining popularity with Veronica.</p>
+		</div>
+	</article>
+</div>
+{% include footer.html %}

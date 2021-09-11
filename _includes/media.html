@@ -1,0 +1,1 @@
+<a href="{{ include.link }}" style="background-image:url('{{ include.image }}');">{{ include.name }}<div class="rating {{ include.rating }}">{% if include.rating == "all" %}Everyone{% elsif include.rating == "teen" %}Teen{% elsif include.rating == "adult" %}Adult{% endif %}</div></a>

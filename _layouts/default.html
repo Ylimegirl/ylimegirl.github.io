@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>{% if page.css %}{% assign sheets = page.css | split: "|" %}{% for style in sheets %}
+		<link rel="stylesheet" href="/assets/css/{{ style }}">{% endfor %}{% else %}
+		<link rel="stylesheet" href="/assets/css/styles.css">{% endif %}
+		<link rel="shortcut icon" href="{{ page.image | default: "/assets/images/headerImage.png" }}">
+		{% seo title=false -%}{% if page.foreground or page.background or page.heading-color or page.link-color %}
+		<style>
+			:root {
+				--foreground-color: {{ page.foreground | default: "#D6B5FF" }};
+				--background-color: {{ page.background | default: "#EAD9FF" }};
+				--heading-color: {{ page.heading-color | default: "#C08CFF" }};
+				--link-color: {{ page.link-color | default: "#9640FF" }};
+			}
+		</style>{% endif %}
+	</head>
+	<body>
+		{{ content }}
+	</body>
+</html>

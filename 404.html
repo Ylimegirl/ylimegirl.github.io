@@ -1,35 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Not Found</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="shortcut icon" href="/wip.png" >
-    <style>
-    h1 {
-      width:3em;
-      height:3em;
-      border-radius:50%;
-      color:#EAD9FF;
-      background:#D6B5FF;
-      text-align:center;
-      line-height:3em;
-      font-size:4em;
-      margin: 0 auto;
-    }
-    p {
-      margin: .25em;
-    }
-    </style>
-  </head>
-  <body>
-  <div class="maxHeight" style="display:flex; height:100vh;">
-    <div class="center" style="margin:auto;">
-      <h1>404</h1>
-      <p>The requested page does not exist.</p>
-      <p><a href="/">Index</a> | <a href="https://github.com/Ylimegirl">Profile</a></p>
-    </div>
-  </div>
-  </body>
-</html>
+---
+permalink: /404.html
+layout: default
+title: Not Found
+image: /assets/images/wip.png
+css: 404.css
+---
+<div class="maxHeight">
+	<div class="center">
+		<h1>404</h1>
+		<p>The requested page does not exist.</p>
+		<p><a href="{% link index.html %}">Index</a> | <a href="https://github.com/Ylimegirl/ylimegirl.github.io">GitHub</a></p>
+	</div>
+</div>
