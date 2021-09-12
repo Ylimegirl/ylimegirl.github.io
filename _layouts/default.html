@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>{{ page.title }}</title>{% if page.css %}{% assign sheets = page.css | split: "|" %}{% for style in sheets %}
-		<link rel="stylesheet" href="/assets/css/{{ style }}">{% endfor %}{% else %}
-		<link rel="stylesheet" href="/assets/css/styles.css">{% endif %}
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="/assets/css/styles.css">{% if page.css %}{% assign sheets = page.css | split: "|" %}{% for style in sheets %}
+		<link rel="stylesheet" href="/assets/css/{{ style }}">{% endfor %}{% endif %}
 		<link rel="shortcut icon" href="{{ page.image | default: "/assets/images/headerImage.png" }}">
 		{% seo title=false -%}{% if page.foreground or page.background or page.heading-color or page.link-color %}
 		<style>
