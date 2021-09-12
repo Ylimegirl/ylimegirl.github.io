@@ -1,0 +1,55 @@
+body {
+	background-color: black;
+	color: #0F0;
+	font-family: monospace;
+	min-height: 100vh;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px;
+	background: black;
+	border-bottom: 2px solid #0F0;
+	font-weight: bold;
+	font-size: 4em;
+	z-index: 5;
+}
+
+article {
+	background-image: url("/assets/images/31/Marked.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	max-width: unset;
+	max-height: unset;
+	background-color: black;
+}
+
+article p {
+	display: none;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: black;
+	border-top: 2px solid #0F0;
+	border-radius: 0;
+	margin: 0;
+	max-width:unset;
+	text-align: center;
+	z-index: 5;
+}

@@ -1,0 +1,73 @@
+header {
+	max-width:980px;
+	margin:5vh auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius:20px;
+	text-align: center;
+	background-color: var(--foreground-color, #D6B5FF);
+	padding: 5px;
+	min-height:25vh;
+	align-content: center;
+	text-align: center;
+	gap: .5rem;
+}
+
+section h2 {
+	background-color: var(--heading-color, #C08CFF);
+	border-radius: 10px;
+	padding: 0 5px;
+	line-height: 1.5em;
+	text-align:center;
+	width: 100%;
+}
+
+section a {
+	padding:.5em 5px;
+	font-weight: bold;
+	font-size: 1.125em;
+	text-align: center;
+	border-radius: 15px;
+	width: 150px;
+	height: 200px;
+	text-align: center;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: var(--foreground-color, #D6B5FF);
+	color: white;
+	text-shadow: -1px -1px .75px black, -1px 1px .75px black, 1px -1px .75px black, 1px 1px .75px black;
+}
+
+section a:hover {
+	text-decoration: inherit;
+	box-shadow: 0 0 0px 75px rgba(255, 255, 255, .33) inset;
+}
+
+a .rating {
+	position: absolute;
+	width: 90%;
+	border-radius: 10px;
+	color: white;
+	margin: 5%;
+	bottom: 0;
+	left: 0;
+	text-shadow: none;
+	font-variant: small-caps;
+	padding: 0 5px;
+	font-size: 1rem;
+	line-height: 1.5em;
+}
+
+a .rating.all {
+	background-color: teal;
+}
+
+a .rating.teen {
+	background-color: orange;
+}
+
+a .rating.adult {
+	background-color: crimson;
+}

@@ -1,0 +1,33 @@
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	width:3em;
+	height:3em;
+	color:var(--background-color, #EAD9FF);
+	background:var(--foreground-color, #D6B5FF);
+	line-height:3em;
+	font-size:4em;
+	margin: 0 auto;
+}
+
+p {
+	margin: .25em;
+	text-align: center;
+}
+
+@media screen and (max-width:667px){
+	.maxHeight {
+		display: flex;
+		height: calc(100vh - 20px);
+	}
+}
+
+@media screen and (max-height:667px){
+	.maxHeight {
+		display: flex;
+		height: calc(100vh - 20px);
+	}
+}

@@ -1,0 +1,30 @@
+.maxHeight {
+	align-items: center;
+}
+
+.maxHeight p {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+img {
+	max-width:100%;
+	height: auto;
+}
+
+@media screen and (max-width:667px){
+	.maxHeight {
+		display: flex;
+		height: calc(100vh - 20px);
+	}
+}
+
+@media screen and (max-height:667px){
+	.maxHeight {
+		display: flex;
+		height: calc(100vh - 20px);
+	}
+}

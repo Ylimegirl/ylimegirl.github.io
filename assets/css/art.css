@@ -1,0 +1,55 @@
+header {
+	max-width:980px;
+	margin:5vh auto;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius:20px;
+	text-align: center;
+	background-color: var(--foreground-color, #D6B5FF);
+	padding: 5px;
+	min-height:25vh;
+	gap:.5em;
+}
+
+section.flex {
+	justify-content: space-around;
+}
+
+section h2 {
+	background-color: var(--heading-color, #C08CFF);
+	border-radius: 10px;
+	padding:0 5px;
+	line-height:1.5em;
+	text-align:center;
+	width: 100%;
+}
+
+section a {
+	border-radius: 15px;
+	width: auto;
+	height: 200px;
+	min-width: 100px;
+	max-width: 500px;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #D6B5FF;
+}
+
+section a:hover {
+	text-decoration: inherit;
+	box-shadow: 0 0 0px 250px rgba(255, 255, 255, .33) inset;
+}
+
+section .title {
+	position: absolute;
+	color: white;
+	text-shadow: -1px -1px .75px black, -1px 1px .75px black, 1px -1px .75px black, 1px 1px .75px black;
+	font-weight: bold;
+	font-size: 1.125em;
+	padding: 5px;
+	text-align: right;
+	bottom: 0;
+	right: .125em;
+}
